@@ -16,31 +16,44 @@
       type="image/x-icon"
       href="/assets/android-chrome-192x192.png"
     />
-    
+
     <title>Contact Us</title>
-    <link rel="icon" href="img_web/favicon.ico">
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-  emailjs.init("auzSAGEmgrDugzAnZ");
-})();
-</script>
+    <link rel="icon" href="img_web/favicon.ico" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("auzSAGEmgrDugzAnZ");
+      })();
+    </script>
   </head>
   <body>
     <nav class="landing-navbar">
       <div class="landing-navbar-container">
-          <div class="landing-nav-top">
-            <div class="nav-heading">
-              <img class="nav-logo" src="img_web/Akshar_logo_white.png" alt="nav-logo">
-              <a href="/home"><h1 class="landing-nav-heading">अAKSHAR</h1></a>
-            </div>
+        <div class="landing-nav-top">
+          <div class="nav-heading">
+            <img
+              class="nav-logo"
+              src="img_web/Akshar_logo_white.png"
+              alt="nav-logo"
+            />
+            <a href="/"><h1 class="landing-nav-heading">अAKSHAR</h1></a>
+          </div>
           <ul class="landing-nav-links">
-              <li><a href="/fund/fundraiser" class="landing-nav-list-items" >Home</a></li>
-              <li><a href="/fund/donate-home" class="landing-nav-list-items">Donate</a></li>
-              <li><a href="/contact" class="landing-nav-list-items">Contact us</a></li>
-              <!-- <li class="landing-nav-login-btn">
+            <li>
+              <a href="/fund/fundraiser" class="landing-nav-list-items">Home</a>
+            </li>
+            <li>
+              <a href="/fund/donate-home" class="landing-nav-list-items"
+                >Donate</a
+              >
+            </li>
+            <li>
+              <a href="/contact" class="landing-nav-list-items">Contact us</a>
+            </li>
+            <!-- <li class="landing-nav-login-btn">
                   <a href="/fund/login-signup">
                       <button class="landing-nav-btn">Login / Signup
                           <span class="landing-nav-login-icon"><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
@@ -48,29 +61,41 @@
                   </a>
               </li> -->
           </ul>
-      </div>
-      <label for="check">
+        </div>
+        <label for="check">
           <span class="landing-nav-ham-btn">
-              <i class="fa-solid fa-bars fa-2xl"></i>
+            <i class="fa-solid fa-bars fa-2xl"></i>
           </span>
-      </label>
-      <input type="checkbox" name="" id="check">
-      <div class="landing-nav-bottom">
+        </label>
+        <input type="checkbox" name="" id="check" />
+        <div class="landing-nav-bottom">
           <ul class="landing-nav-bottom-links">
-                  <li><a href="/fund/fundraiser" class="landing-nav-bottom-list-items">Home</a></li>
-                  <li><a href="/fund/donate-home" class="landing-nav-bottom-list-items">Donate</a></li>
-                  <li><a href="/contact" class="landing-nav-bottom-list-items">Contact us</a></li>
-                  <!-- <li>
+            <li>
+              <a href="/fund/fundraiser" class="landing-nav-bottom-list-items"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="/fund/donate-home" class="landing-nav-bottom-list-items"
+                >Donate</a
+              >
+            </li>
+            <li>
+              <a href="/contact" class="landing-nav-bottom-list-items"
+                >Contact us</a
+              >
+            </li>
+            <!-- <li>
                       <a href="/fund/login-signup">
                           <button class="landing-nav-bottom-btn">Login / Signup
                               <span class="landing-nav-login-icon"><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
                           </button>
                       </a>
                   </li> -->
-              </ul>
-          </div>
+          </ul>
+        </div>
       </div>
-  </nav>
+    </nav>
     <main>
       <div class="main-container container">
         <div class="information-container">
@@ -121,9 +146,15 @@
             </p>
           </div>
           <div class="info_socials">
-            <a href="https://www.facebook.com/profile.php?id=100084294644878"><i class="fab fa-facebook-f fa-2x"></i></a>
-            <a href="https://twitter.com/Akshar_aarkss"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="https://www.instagram.com/akshar_siksha_ka_avsar/"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100084294644878"
+              ><i class="fab fa-facebook-f fa-2x"></i
+            ></a>
+            <a href="https://twitter.com/Akshar_aarkss"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
+            <a href="https://www.instagram.com/akshar_siksha_ka_avsar/"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
           </div>
         </div>
         <div class="form-container">
@@ -140,7 +171,12 @@
                 <h2>Mail</h2>
                 <div class="input">
                   <label for="email_id"><i class="far fa-envelope"></i></label>
-                  <input type="text" id="email_id" name="email_id" autocomplete />
+                  <input
+                    type="text"
+                    id="email_id"
+                    name="email_id"
+                    autocomplete
+                  />
                 </div>
               </div>
               <div class="msg">
@@ -156,13 +192,16 @@
                   ></textarea>
                 </div>
               </div>
-              
+
               <button onclick="SendMail()" class="btn">
                 <!-- <button  class="btn"> -->
-                  <input type="submit" value="Send Message" class="button" style="cursor: pointer;">
+                <input
+                  type="submit"
+                  value="Send Message"
+                  class="button"
+                  style="cursor: pointer"
+                />
               </button>
-
-              
             </div>
           </form>
         </div>
@@ -170,65 +209,111 @@
     </main>
     <footer>
       <section class="fundraiser-footer">
-          <div class="fundraiser-footer-container">
-              <img src="img_web/footer-wave.jpg" alt="footer-wave" class="fundraiser-footer-img">
-              <div class="fundraiser-footer-content">
-                  <div class="fundraiser-footer-content-col0 fundraiser-footer-col">
-                      <h2 class="fundraiser-footer-col-head">Donate towards</h2>
-                      <div class="fundraiser-footer-h2-underline"></div>
-                      <ul class="fundraiser-footer-col0-points">
-                          <li class="fundraiser-footer-points"><span class="fundraiser-footer-col0-icon"><i class="fa-solid fa-book-medical"></i></span> Medical</li>
-                          <li class="fundraiser-footer-points"><span class="fundraiser-footer-col0-icon"><i class="fa-solid fa-book-open-reader"></i></span> Education</li>
-                          <li class="fundraiser-footer-points"><span class="fundraiser-footer-col0-icon"><i class="fa-solid fa-futbol"></i></span> Sports</li>
-                      </ul>
-                  </div>
-                  <div class="fundraiser-footer-content-col1 fundraiser-footer-col">
-                      <h2 class="fundraiser-footer-col-head">Website</h2>
-                      <div class="fundraiser-footer-h2-underline"></div>
-                      <ul class="fundraiser-footer-links">
-                          <li class="fundraiser-footer-lists"><a href="/fund/fundraiser">Home</a></li>
-                          <li class="fundraiser-footer-lists"><a href="/fund/donate-home">Donate</a></li>
-                          <li class="fundraiser-footer-lists"><a href="/contact">Contact us</a></li>
-                      </ul>
-                  </div>
-                  <div class="fundraiser-footer-content-col2 fundraiser-footer-col">
-                      <h2 class="fundraiser-footer-col-head">Address</h2>
-                      <div class="fundraiser-footer-h2-underline"></div>
-                      <p class="fundraiser-footer-address">
-                          Kalyani, Nadia <br><br> West Bengal, India <br><br> PIN. 741235
-                      </p>
-                  </div>
-                  <div class="fundraiser-footer-content-col3 fundraiser-footer-col">
-                      <h2 class="fundraiser-footer-col-head">Social media links</h2>
-                      <div class="fundraiser-footer-h2-underline"></div>
-                      <div class="fundraiser-footer-social-media">
-                          <span class="fundraiser-footer-icon"><a href="https://www.facebook.com/profile.php?id=100084294644878"><i class="fa-brands fa-facebook-f"></i></a></span>
-                          <span class="fundraiser-footer-twitter-icon"><a href="https://twitter.com/Akshar_aarkss"><i class="fa-brands fa-twitter"></i></a></span>
-                          <span class="fundraiser-footer-icon"><a href="https://www.linkedin.com/in/akshar-siksha-ka-avsar-a62421248/"><i class="fa-brands fa-linkedin-in"></i></a></span>
-                          <span class="fundraiser-footer-icon"><a href="https://www.instagram.com/akshar_siksha_ka_avsar/"><i class="fa-brands fa-instagram"></i></a></span>
-                      </div>
-                  </div>
-                  <div class="fundraiser-footer-content-col4 fundraiser-footer-col">
-                      <img src="img_web/app-promotion.jpg" alt="app-promotion" class="fundraiser-footer-app-promotion">
-                  </div>
+        <div class="fundraiser-footer-container">
+          <img
+            src="img_web/footer-wave.jpg"
+            alt="footer-wave"
+            class="fundraiser-footer-img"
+          />
+          <div class="fundraiser-footer-content">
+            <div class="fundraiser-footer-content-col0 fundraiser-footer-col">
+              <h2 class="fundraiser-footer-col-head">Donate towards</h2>
+              <div class="fundraiser-footer-h2-underline"></div>
+              <ul class="fundraiser-footer-col0-points">
+                <li class="fundraiser-footer-points">
+                  <span class="fundraiser-footer-col0-icon"
+                    ><i class="fa-solid fa-book-medical"></i
+                  ></span>
+                  Medical
+                </li>
+                <li class="fundraiser-footer-points">
+                  <span class="fundraiser-footer-col0-icon"
+                    ><i class="fa-solid fa-book-open-reader"></i
+                  ></span>
+                  Education
+                </li>
+                <li class="fundraiser-footer-points">
+                  <span class="fundraiser-footer-col0-icon"
+                    ><i class="fa-solid fa-futbol"></i
+                  ></span>
+                  Sports
+                </li>
+              </ul>
+            </div>
+            <div class="fundraiser-footer-content-col1 fundraiser-footer-col">
+              <h2 class="fundraiser-footer-col-head">Website</h2>
+              <div class="fundraiser-footer-h2-underline"></div>
+              <ul class="fundraiser-footer-links">
+                <li class="fundraiser-footer-lists">
+                  <a href="/fund/fundraiser">Home</a>
+                </li>
+                <li class="fundraiser-footer-lists">
+                  <a href="/fund/donate-home">Donate</a>
+                </li>
+                <li class="fundraiser-footer-lists">
+                  <a href="/contact">Contact us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="fundraiser-footer-content-col2 fundraiser-footer-col">
+              <h2 class="fundraiser-footer-col-head">Address</h2>
+              <div class="fundraiser-footer-h2-underline"></div>
+              <p class="fundraiser-footer-address">
+                Kalyani, Nadia <br /><br />
+                West Bengal, India <br /><br />
+                PIN. 741235
+              </p>
+            </div>
+            <div class="fundraiser-footer-content-col3 fundraiser-footer-col">
+              <h2 class="fundraiser-footer-col-head">Social media links</h2>
+              <div class="fundraiser-footer-h2-underline"></div>
+              <div class="fundraiser-footer-social-media">
+                <span class="fundraiser-footer-icon"
+                  ><a
+                    href="https://www.facebook.com/profile.php?id=100084294644878"
+                    ><i class="fa-brands fa-facebook-f"></i></a
+                ></span>
+                <span class="fundraiser-footer-twitter-icon"
+                  ><a href="https://twitter.com/Akshar_aarkss"
+                    ><i class="fa-brands fa-twitter"></i></a
+                ></span>
+                <span class="fundraiser-footer-icon"
+                  ><a
+                    href="https://www.linkedin.com/in/akshar-siksha-ka-avsar-a62421248/"
+                    ><i class="fa-brands fa-linkedin-in"></i></a
+                ></span>
+                <span class="fundraiser-footer-icon"
+                  ><a href="https://www.instagram.com/akshar_siksha_ka_avsar/"
+                    ><i class="fa-brands fa-instagram"></i></a
+                ></span>
               </div>
+            </div>
+            <div class="fundraiser-footer-content-col4 fundraiser-footer-col">
+              <img
+                src="img_web/app-promotion.jpg"
+                alt="app-promotion"
+                class="fundraiser-footer-app-promotion"
+              />
+            </div>
           </div>
+        </div>
       </section>
-  </footer>
+    </footer>
 
-  <script>
-    function SendMail(){
-      var params ={
-        from_name : document.getElementById("fullName").value,
-        email_id : document.getElementById("email_id").value,
-        message : document.getElementById("message").value,
-
+    <script>
+      function SendMail() {
+        var params = {
+          from_name: document.getElementById("fullName").value,
+          email_id: document.getElementById("email_id").value,
+          message: document.getElementById("message").value,
+        };
+        emailjs
+          .send("service_wx5dz3f", "template_tu58abm", params)
+          .then(function (res) {
+            alert("success!" + res.status);
+            window.location.reload("true");
+          });
       }
-      emailjs.send("service_wx5dz3f","template_tu58abm",params).then(function (res){
-        alert("success!" + res.status)
-        window.location.reload("true")
-      })
-    }
-  </script>
+    </script>
   </body>
 </html>

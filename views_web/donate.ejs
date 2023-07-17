@@ -16,47 +16,77 @@
   <body>
     <nav class="landing-navbar">
       <div class="landing-navbar-container">
-          <div class="landing-nav-top">
-            <div class="nav-heading">
-              <img class="nav-logo" src="img_web/Akshar_logo_white.png" alt="nav-logo">
-              <a href="/home"><h1 class="landing-nav-heading">अAKSHAR</h1></a>
-            </div>
-          <ul class="landing-nav-links">
-              <li><a href="/fund/fundraiser" class="landing-nav-list-items" >Home</a></li>
-              <li><a href="/fund/donate-home" class="landing-nav-list-items">Donate</a></li>
-              <li><a href="/contact" class="landing-nav-list-items">Contact us</a></li>
-              <li class="landing-nav-login-btn">
-                  <a href="/fund/login-signup">
-                      <button class="landing-nav-btn">Login / Signup
-                          <span class="landing-nav-login-icon"><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
-                      </button>
-                  </a>
-              </li>
-          </ul>
-      </div>
-      <label for="check">
-          <span class="landing-nav-ham-btn">
-              <i class="fa-solid fa-bars fa-2xl"></i>
-          </span>
-      </label>
-      <input type="checkbox" name="" id="check">
-      <div class="landing-nav-bottom">
-          <ul class="landing-nav-bottom-links">
-                  <li><a href="/fund/fundraiser" class="landing-nav-bottom-list-items">Home</a></li>
-                  <li><a href="/fund/donate-home" class="landing-nav-bottom-list-items">Donate</a></li>
-                  <li><a href="/contact" class="landing-nav-bottom-list-items">Contact us</a></li>
-                  <li>
-                      <a href="/fund/login-signup">
-                          <button class="landing-nav-bottom-btn">Login / Signup
-                              <span class="landing-nav-login-icon"><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
-                          </button>
-                      </a>
-                  </li>
-              </ul>
+        <div class="landing-nav-top">
+          <div class="nav-heading">
+            <img
+              class="nav-logo"
+              src="img_web/Akshar_logo_white.png"
+              alt="nav-logo"
+            />
+            <a href="/"><h1 class="landing-nav-heading">अAKSHAR</h1></a>
           </div>
+          <ul class="landing-nav-links">
+            <li>
+              <a href="/fund/fundraiser" class="landing-nav-list-items">Home</a>
+            </li>
+            <li>
+              <a href="/fund/donate-home" class="landing-nav-list-items"
+                >Donate</a
+              >
+            </li>
+            <li>
+              <a href="/contact" class="landing-nav-list-items">Contact us</a>
+            </li>
+            <li class="landing-nav-login-btn">
+              <a href="/fund/login-signup">
+                <button class="landing-nav-btn">
+                  Login / Signup
+                  <span class="landing-nav-login-icon"
+                    ><i class="fa-solid fa-arrow-right-to-bracket"></i
+                  ></span>
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <label for="check">
+          <span class="landing-nav-ham-btn">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+          </span>
+        </label>
+        <input type="checkbox" name="" id="check" />
+        <div class="landing-nav-bottom">
+          <ul class="landing-nav-bottom-links">
+            <li>
+              <a href="/fund/fundraiser" class="landing-nav-bottom-list-items"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="/fund/donate-home" class="landing-nav-bottom-list-items"
+                >Donate</a
+              >
+            </li>
+            <li>
+              <a href="/contact" class="landing-nav-bottom-list-items"
+                >Contact us</a
+              >
+            </li>
+            <li>
+              <a href="/fund/login-signup">
+                <button class="landing-nav-bottom-btn">
+                  Login / Signup
+                  <span class="landing-nav-login-icon"
+                    ><i class="fa-solid fa-arrow-right-to-bracket"></i
+                  ></span>
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
-    
+    </nav>
+
     <section class="section donate-section">
       <div class="container donate-container">
         <div class="heading">
@@ -69,44 +99,45 @@
             alt="My Image"
           />
         </div>
-        <div style="
-    text-align: center;
-    width: 60%;
-    display: flex;
-    margin: 10px 0 25px 20%;
-    padding: 10px;
-    border-radius: 12px;
-    background: #90dc88;
-    justify-content: center;
-    /* justify-items: center; */
-"><%=msg%></div>
+        <div
+          style="
+            text-align: center;
+            width: 60%;
+            display: flex;
+            margin: 10px 0 25px 20%;
+            padding: 10px;
+            border-radius: 12px;
+            background: #90dc88;
+            justify-content: center;
+            /* justify-items: center; */
+          "
+        >
+          <%=msg%>
+        </div>
       </div>
       <div class="whole-card-boy">
-      <div class="full-card-container">
-        <% fund_info.forEach(fund =>{%>
-        
+        <div class="full-card-container">
+          <% fund_info.forEach(fund =>{%>
+
           <!-- <p><%=fund.image%></p> -->
           <div class="card">
             <img src="file/<%=fund.image%>" alt="Avatar" style="width: 100%" />
             <div class="card-container">
               <h4><b><%=fund.problem_statement%></b></h4>
-              <p>
-                <%=fund.problem_description%>
-              </p>
+              <p><%=fund.problem_description%></p>
               <div class="btn">
-                <a href="/fund/donate-option/<%=fund.problem_statement%>" class="button"
+                <a
+                  href="/fund/donate-option/<%=fund.problem_statement%>"
+                  class="button"
                   ><span>Donate</span></a
                 >
               </div>
             </div>
           </div>
-      
-       <%})%>
-        
 
-        
+          <%})%>
+        </div>
       </div>
-    </div>
       <div class="container achievements-container">
         <div class="achievements-left">
           <h2 class="achievements-secondary-heading">Feel Free To Donate</h2>
