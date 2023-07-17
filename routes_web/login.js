@@ -137,7 +137,7 @@ router.get("/home-page", async (req, res) => {
 
 // landing pages
 router.get("/main-page", async (req, res) => {
-  res.render("landing-home.ejs");
+  res.render("index.ejs");
 });
 
 // fundraiser pages

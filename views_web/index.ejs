@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css_web/main.css" />
-    <link rel="stylesheet" href="css_web/landing-home-post-login.css" />
+    <link rel="stylesheet" href="css_web/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -24,35 +24,25 @@
               src="img_web/Akshar_logo_white.png"
               alt="nav-logo"
             />
-            <a href="/home-page"
-              ><h1 class="landing-nav-heading">अAKSHAR</h1></a
-            >
+            <a href="/home"><h1 class="landing-nav-heading">अAKSHAR</h1></a>
           </div>
           <ul class="landing-nav-links">
+            <li><a href="/home" class="landing-nav-list-items">Home</a></li>
             <li>
-              <a href="/home-page" class="landing-nav-list-items">Home</a>
+              <a href="/about-us" class="landing-nav-list-items">About us</a>
             </li>
             <li>
-              <a href="/about-logged-in" class="landing-nav-list-items"
-                >About us</a
-              >
-            </li>
-            <li>
-              <a
-                href="/fund/fundraiser-logged-in"
-                class="landing-nav-bottom-list-items"
+              <a href="/fund/fundraiser" class="landing-nav-list-items"
                 >Fundraiser</a
               >
             </li>
-            <li>
-              <a href="/blog-logged-in" class="landing-nav-list-items">Blog</a>
-            </li>
+            <li><a href="/blog" class="landing-nav-list-items">Blog</a></li>
             <li class="landing-nav-login-btn">
-              <a href="/main-page">
+              <a href="/user/login">
                 <button class="landing-nav-btn">
-                  Logout
+                  Login / Register
                   <span class="landing-nav-login-icon"
-                    ><i class="fa-solid fa-arrow-right-from-bracket"></i
+                    ><i class="fa-solid fa-arrow-right-to-bracket"></i
                   ></span>
                 </button>
               </a>
@@ -64,46 +54,29 @@
             <i class="fa-solid fa-bars fa-2xl"></i>
           </span>
         </label>
-        <div class="popup" onclick="myFunction()">
-          <span><i class="fa-solid fa-user"></i></span>
-          <span class="popuptext" id="myPopup">
-            <p>
-              Ankesh Banerjee<br />
-              banerjeeankesh@gmail.com <br />
-              9064106966 <br />
-              Last donated Rs. 2000/-
-            </p>
-          </span>
-        </div>
         <input type="checkbox" name="" id="check" />
         <div class="landing-nav-bottom">
           <ul class="landing-nav-bottom-links">
             <li>
-              <a href="/home-page" class="landing-nav-bottom-list-items"
-                >Home</a
-              >
+              <a href="/home" class="landing-nav-bottom-list-items">Home</a>
             </li>
             <li>
-              <a href="/about-logged-in" class="landing-nav-bottom-list-items"
+              <a href="/about-us" class="landing-nav-bottom-list-items"
                 >About us</a
               >
             </li>
             <li>
-              <a
-                href="/fund/fundraiser-logged-in"
-                class="landing-nav-bottom-list-items"
+              <a href="/fund/fundraiser" class="landing-nav-bottom-list-items"
                 >Fundraiser</a
               >
             </li>
+            <li><a href="/blog" class="landing-nav-list-items">Blog</a></li>
             <li>
-              <a href="/blog-logged-in" class="landing-nav-list-items">Blog</a>
-            </li>
-            <li>
-              <a href="/main-page">
-                <button class="landing-nav-btn">
-                  Logout
+              <a href="/user/login">
+                <button class="landing-nav-bottom-btn">
+                  Login / Register
                   <span class="landing-nav-login-icon"
-                    ><i class="fa-solid fa-arrow-right-from-bracket"></i
+                    ><i class="fa-solid fa-arrow-right-to-bracket"></i
                   ></span>
                 </button>
               </a>
@@ -304,13 +277,13 @@
               <div class="landing-footer-h2-underline"></div>
               <ul class="landing-footer-links">
                 <li class="landing-footer-lists">
-                  <a href="/home-post">Home</a>
+                  <a href="/home">Home</a>
                 </li>
                 <li class="landing-footer-lists">
-                  <a href="about us-post-login.html">About us</a>
+                  <a href="/about-us">About us</a>
                 </li>
                 <li class="landing-footer-lists">
-                  <a href="fundraiser-home.html">Fundraiser</a>
+                  <a href="/fund/fundraiser">Fundraiser</a>
                 </li>
               </ul>
             </div>
@@ -359,13 +332,6 @@
       </section>
     </footer>
 
-    <script>
-      // When the user clicks on <div>, open the popup
-      function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-      }
-    </script>
     <script src="js_web/index.js"></script>
   </body>
 </html>

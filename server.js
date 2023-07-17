@@ -5,9 +5,12 @@ const port = 3000;
 const app = express();
 const server = express();
 
+// Using .env
+const dotenv = require('dotenv');
+dotenv.config();
+
 // database connection
-const uri ="mongodb+srv://raj4321:YIfQx247fYNf0YW0@braincellsdb.ajb1asy.mongodb.net/?retryWrites=true&w=majority";
-// const uri_2 ="mongodb://raj4321:YIfQx247fYNf0YW0@ac-lvdgsyz-shard-00-00.ajb1asy.mongodb.net:27017,ac-lvdgsyz-shard-00-01.ajb1asy.mongodb.net:27017,ac-lvdgsyz-shard-00-02.ajb1asy.mongodb.net:27017/?ssl=true&replicaSet=atlas-n2mj96-shard-0&authSource=admin&retryWrites=true&w=majority";
+const uri = process.env.MONGO_URI;
 const db = mongoose.connect(uri);
 const con = mongoose.connection;
 
@@ -62,7 +65,7 @@ app.get("/register", (req, res) => {
 });
 
 app.get("/home", (req, res) => {
-  res.render("landing-home.ejs");
+  res.render("index.ejs");
 });
 
 app.get("/about-us", (req, res) => {
@@ -120,7 +123,7 @@ app.get("/home-page", async (req, res) => {
 
 // landing pages
 app.get("/main-page", async (req, res) => {
-  res.render("landing-home.ejs");
+  res.render("index.ejs");
 });
 
 
@@ -128,8 +131,8 @@ app.get("/designing",(req,res) =>{
   res.render("razorpay-demo.ejs")
 })
 
-app.listen(port, () => {
-  console.log("server started");
+app.listen( process.env.PORT || port, () => {
+  console.log(`server started on ${port}`);
 });
 
 app.post("/api/payment/verify", (req, res) => {
