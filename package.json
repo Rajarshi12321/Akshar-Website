@@ -2,10 +2,10 @@
   "name": "project_api",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "web": "nodemon server.js"
+    "start": "nodemon app.js",
+    "web": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",

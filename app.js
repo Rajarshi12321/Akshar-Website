@@ -93,7 +93,7 @@ app.get("/contact", (req, res) => {
 app.post("/contact", (req, res) => {
   console.log(req.body)
 
- 
+
   // function SendMail(){
   //   var params ={
   //     from_name : document.getElementById("fullName").value,
@@ -127,11 +127,11 @@ app.get("/main-page", async (req, res) => {
 });
 
 
-app.get("/designing",(req,res) =>{
+app.get("/designing", (req, res) => {
   res.render("razorpay-demo.ejs")
 })
 
-app.listen( process.env.PORT || port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`server started on ${port}`);
 });
 
