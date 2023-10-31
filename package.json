@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "web": "nodemon app.js"
+    "web": "nodemon app.js",
+    "readme": "node ./node_modules/.bin/node-readme"
   },
   "author": "",
   "license": "ISC",
@@ -39,7 +39,11 @@
     "passport-twitter": "^1.0.4",
     "razorpay": "^2.8.3",
     "react-native-email": "^2.1.0",
+    "readme": "^0.7.0",
     "stripe": "^10.3.0",
     "twilio": "^3.80.0"
+  },
+  "devDependencies": {
+    "node-readme": "^0.1.9"
   }
 }
