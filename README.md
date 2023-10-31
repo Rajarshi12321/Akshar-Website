@@ -11,9 +11,6 @@ This is an website intended to support and promote our initiatives of Aakshar. W
   - [Dependencies](#dependencies)
   - [Application Structure](#application-structure)
   - [Features](#features)
-  - [Contributing](#contributing)
-  - [License](#license)
-
 
 
 ## Working Directory
@@ -158,22 +155,3 @@ To run this project locally, please follow these steps:-
 3. Blogs and promotions. 
 4. Users can donate towards a cause. 
 5. One can start a fundraiser for free as well.
-
-## Contributing
-I welcome contributions to improve the functionality and performance of the app. If you'd like to contribute, please follow these guidelines:
-
-1. Fork the repository and create a new branch for your feature or bug fix.
-
-2. Make your changes and ensure that the code is well-documented.
-
-3. Test your changes thoroughly to maintain app reliability.
-
-4. Create a pull request, detailing the purpose and changes made in your contribution.
-
-
-
-## License
-This project is licensed under the MIT License. Feel free to modify and distribute it as per the terms of the license.
-
-I hope this README provides you with the necessary information to get started with the Housing Price Prediction and Recommending project. 
-
