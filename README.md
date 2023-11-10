@@ -16,7 +16,7 @@ This is an website intended to support and promote our initiatives of Aakshar. W
 ## Images
 
 Home Page :
-![image](https://github.com/Rajarshi12321/Akshar-Website/assets/94736350/f4546e4b-af67-4b65-888c-db59231027bc)
+![image](https://github.com/Rajarshi12321/Akshar-Website/assets/94736350/71050c88-b25f-4156-a668-b45ebb9ce602)
 
 
 ## Working Directory
