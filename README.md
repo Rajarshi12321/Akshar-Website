@@ -6,11 +6,17 @@ This is an website intended to support and promote our initiatives of Aakshar. W
 
 - [Akshar siksha project](#akshar-siksha-project)
   - [Table of Contents](#table-of-contents)
+  - [Images](#images)
   - [Working Directory](#working-directory)
   - [Working with the code](#working-with-the-code)
   - [Dependencies](#dependencies)
   - [Application Structure](#application-structure)
   - [Features](#features)
+
+## Images
+
+Home Page :
+![image](https://github.com/Rajarshi12321/Akshar-Website/assets/94736350/f4546e4b-af67-4b65-888c-db59231027bc)
 
 
 ## Working Directory
